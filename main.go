@@ -103,9 +103,9 @@ type SupplierPurchaseOrder struct {
 }
 
 type OperationEvent struct {
-	Id         string `json:"id"`
 	Table      string `json:"table"`
-	Key 	   string `json:"key"`
+	Key        string `json:"key"`
+	Id         string `json:"id"`
 	Status     string `json:"status"`
 	ItemUpdate bool   `json:"itemUpdate"`
 	Operation  string `json:"operation"`
