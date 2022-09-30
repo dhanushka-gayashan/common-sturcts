@@ -1,6 +1,8 @@
 package structs
 
-import "time"
+import (
+	"time"
+)
 
 type Card struct {
 	Id         string    `json:"id"`
@@ -103,6 +105,7 @@ type SupplierPurchaseOrder struct {
 type OperationEvent struct {
 	Id         string `json:"id"`
 	Table      string `json:"table"`
+	Key 	   string `json:"key"`
 	Status     string `json:"status"`
 	ItemUpdate bool   `json:"itemUpdate"`
 	Operation  string `json:"operation"`
