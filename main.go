@@ -66,7 +66,7 @@ type CustomerOrder struct {
 	CustomerOrderId string     `json:"customerOrderId"`
 	CustomerId      string     `json:"customerId"`
 	Date            time.Time  `json:"date"`
-	Status          string     `json:"status"`
+	Progress        string     `json:"progress"`
 	Items           []ListItem `json:"items"`
 }
 
@@ -74,7 +74,7 @@ type CustomerReturn struct {
 	CustomerReturnId string     `json:"customerReturnId"`
 	CustomerId       string     `json:"customerId"`
 	Date             time.Time  `json:"date"`
-	Status           string     `json:"status"`
+	Progress         string     `json:"progress"`
 	Items            []ListItem `json:"items"`
 }
 
@@ -82,7 +82,7 @@ type SupplierGoodReceive struct {
 	SupplierGoodReceiveId string     `json:"supplierGoodReceiveId"`
 	SupplierId            string     `json:"supplierId"`
 	Date                  time.Time  `json:"date"`
-	Status                string     `json:"status"`
+	Progress              string     `json:"progress"`
 	Items                 []ListItem `json:"items"`
 }
 
@@ -90,7 +90,7 @@ type SupplierGoodReturn struct {
 	SupplierGoodReturnId string     `json:"supplierGoodReturnId"`
 	SupplierId           string     `json:"supplierId"`
 	Date                 time.Time  `json:"date"`
-	Status               string     `json:"status"`
+	Progress             string     `json:"progress"`
 	Items                []ListItem `json:"items"`
 }
 
@@ -98,7 +98,7 @@ type SupplierPurchaseOrder struct {
 	SupplierPurchaseOrderId string     `json:"supplierPurchaseOrderId"`
 	SupplierId              string     `json:"supplierId"`
 	Date                    time.Time  `json:"date"`
-	Status                  string     `json:"status"`
+	Progress                string     `json:"progress"`
 	Items                   []ListItem `json:"items"`
 }
 
@@ -106,7 +106,7 @@ type OperationEvent struct {
 	Table      string `json:"table"`
 	Key        string `json:"key"`
 	Id         string `json:"id"`
-	Status     string `json:"status"`
+	Progress   string `json:"progress"`
 	ItemUpdate bool   `json:"itemUpdate"`
 	Operation  string `json:"operation"`
 	OnlyNotify bool   `json:"onlyNotify"`
