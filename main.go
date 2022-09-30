@@ -103,15 +103,15 @@ type SupplierPurchaseOrder struct {
 }
 
 type OperationEvent struct {
-	Table        string `json:"table"`
-	PartitionKey string `json:"partitionKey"`
-	DocId        string `json:"docId"`
-	Progress     string `json:"progress"`
-	ItemUpdate   bool   `json:"itemUpdate"`
-	Operation    string `json:"operation"`
-	OnlyNotify   bool   `json:"onlyNotify"`
-	Email        bool   `json:"email"`
-	SMS          bool   `json:"sms"`
+	Table          string `json:"table"`
+	PartitionKey   string `json:"partitionKey"`
+	DocId          string `json:"docId"`
+	Progress       string `json:"progress"`
+	ItemUpdateOnly bool   `json:"itemUpdateOnly"`
+	Operation      string `json:"operation"`
+	NotifyOnly     bool   `json:"notifyOnly"`
+	Email          bool   `json:"email"`
+	SMS            bool   `json:"sms"`
 }
 
 type OperationUpdateItem struct {
