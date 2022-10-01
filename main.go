@@ -117,7 +117,7 @@ type OperationEvent struct {
 type OperationUpdateItem struct {
 	ItemId   string `json:"itemId"`
 	Quantity int16  `json:"quantity"`
-	OpType   string `json:"optType"`
+	OpType   string `json:"opType"`
 }
 
 type Response struct {
