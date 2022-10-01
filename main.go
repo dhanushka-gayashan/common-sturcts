@@ -110,13 +110,14 @@ type SupplierPurchaseOrder struct {
 }
 
 type OperationEvent struct {
+	UniqueId       string `json:"uniqueId"`
 	Table          string `json:"table"`
 	PartitionKey   string `json:"partitionKey"`
 	DocId          string `json:"docId"`
 	Progress       string `json:"progress"`
+	NotifyOnly     bool   `json:"notifyOnly"`
 	ItemUpdateOnly bool   `json:"itemUpdateOnly"`
 	Operation      string `json:"operation"`
-	NotifyOnly     bool   `json:"notifyOnly"`
 	Email          bool   `json:"email"`
 	SMS            bool   `json:"sms"`
 }
