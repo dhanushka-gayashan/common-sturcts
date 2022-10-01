@@ -4,6 +4,13 @@ import (
 	"time"
 )
 
+const (
+	Add          string = "Add"
+	Deduct              = "Deduct"
+	PlaceOrder          = "PlaceOrder"
+	ReceiveOrder        = "ReceiveOrder"
+)
+
 type Card struct {
 	Id         string    `json:"id"`
 	CardNumber string    `json:"cardNumber"`
