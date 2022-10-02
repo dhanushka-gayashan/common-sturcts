@@ -122,6 +122,10 @@ type OperationEvent struct {
 	SMS            bool   `json:"sms"`
 }
 
+type StepFunctionInput struct {
+	Input OperationEvent `json:"input"`
+}
+
 type OperationUpdateItem struct {
 	ItemId   string `json:"itemId"`
 	Quantity int16  `json:"quantity"`
