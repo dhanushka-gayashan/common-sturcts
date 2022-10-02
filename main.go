@@ -122,7 +122,7 @@ type OperationEvent struct {
 	SMS            bool   `json:"sms"`
 }
 
-type StepFunctionInput struct {
+type StepFunctionEvent struct {
 	Input OperationEvent `json:"input"`
 }
 
