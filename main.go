@@ -20,7 +20,7 @@ type Card struct {
 }
 
 type Customer struct {
-	customerId    string `json:"customerId"`
+	CustomerId    string `json:"customerId"`
 	Email         string `json:"email"`
 	FirstName     string `json:"firstName"`
 	LastName      string `json:"lastName"`
