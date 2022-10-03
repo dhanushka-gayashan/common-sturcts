@@ -9,6 +9,7 @@ const (
 	Deduct              = "Deduct"
 	PlaceOrder          = "PlaceOrder"
 	ReceiveOrder        = "ReceiveOrder"
+	Notify              = "Notify"
 )
 
 type Card struct {
