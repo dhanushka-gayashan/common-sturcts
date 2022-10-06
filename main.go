@@ -29,6 +29,7 @@ type Customer struct {
 	Address       string `json:"address"`
 	MasterCard    Card   `json:"masterCard"`
 	SecondaryCard Card   `json:"secondaryCard"`
+	ProfileURL    string `json:"profileURL"`
 }
 
 type Supplier struct {
@@ -40,9 +41,10 @@ type Supplier struct {
 }
 
 type Employee struct {
-	Email     string `json:"email"`
-	FirstName string `json:"firstName"`
-	LastName  string `json:"lastName"`
+	Email      string `json:"email"`
+	FirstName  string `json:"firstName"`
+	LastName   string `json:"lastName"`
+	ProfileURL string `json:"profileURL"`
 }
 
 type Item struct {
@@ -56,6 +58,7 @@ type Item struct {
 	AvgStock    int16   `json:"avgStock"`
 	MinStock    int16   `json:"minStock"`
 	ReOrder     bool    `json:"reOrder"`
+	InUser      string  `json:"inUser"`
 	ProfileURL  string  `json:"profileURL"`
 }
 
