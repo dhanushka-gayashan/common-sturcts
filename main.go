@@ -65,6 +65,7 @@ type Item struct {
 type ItemType struct {
 	ItemTypeId string `json:"itemTypeId"`
 	Name       string `json:"name"`
+	ProfileURL string `json:"profileURL"`
 }
 
 type ListItem struct {
