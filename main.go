@@ -58,7 +58,7 @@ type Item struct {
 	AvgStock    int16   `json:"avgStock"`
 	MinStock    int16   `json:"minStock"`
 	ReOrder     bool    `json:"reOrder"`
-	InUser      string  `json:"inUser"`
+	InUse       bool    `json:"inUse"`
 	ProfileURL  string  `json:"profileURL"`
 }
 
