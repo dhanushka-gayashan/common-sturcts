@@ -132,8 +132,9 @@ type StepFunctionEvent struct {
 }
 
 type StepFunctionExecutionEvent struct {
-	Input OperationEvent `json:"input"`
-	Name  string         `json:"name"`
+	Input           OperationEvent `json:"input"`
+	Name            string         `json:"name"`
+	StateMachineArn string         `json:"stateMachineArn"`
 }
 
 type OperationUpdateItem struct {
