@@ -131,6 +131,11 @@ type StepFunctionEvent struct {
 	Input OperationEvent `json:"input"`
 }
 
+type StepFunctionExecutionEvent struct {
+	Input OperationEvent `json:"input"`
+	Name  string         `json:"name"`
+}
+
 type OperationUpdateItem struct {
 	ItemId   string `json:"itemId"`
 	Quantity int16  `json:"quantity"`
